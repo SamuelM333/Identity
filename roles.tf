@@ -4,11 +4,6 @@ module "admin_role" {
 
   role_name = "AdministratorRole"
 
-  trusted_role_arns = [
-    module.samuel_murillo.iam_user_arn,
-    module.reviewer.iam_user_arn
-  ]
-
   create_role         = true
   attach_admin_policy = true
 
