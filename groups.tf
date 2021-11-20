@@ -1,4 +1,4 @@
-module "iam_group_with_assumable_roles_policy" {
+module "admin_group" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-group-with-assumable-roles-policy"
   version = "~> 4.7"
 
@@ -9,7 +9,7 @@ module "iam_group_with_assumable_roles_policy" {
   ]
 
   group_users = [
-    module.samuel_murillo.iam_user_arn,
-    module.reviewer.iam_user_arn
+    module.samuel_murillo.iam_user_name,
+    module.reviewer.iam_user_name
   ]
 }
