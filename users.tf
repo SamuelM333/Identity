@@ -17,5 +17,7 @@ module "reviewer" {
   name          = "reviewer"
   force_destroy = false
 
+  pgp_key = "keybase:samuelm333"
+
   password_reset_required = false
 }
