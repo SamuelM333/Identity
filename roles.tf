@@ -6,4 +6,5 @@ module "admin_role" {
   trusted_role_arns   = [var.principal]
   create_role         = true
   attach_admin_policy = true
+  role_requires_mfa   = false
 }
