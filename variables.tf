@@ -1,10 +1,10 @@
 variable "region" {
-  type = string
+  type        = string
   description = "AWS region"
-  default = "us-east-1"
+  default     = "us-east-1"
 }
 
 variable "principal" {
-  type = string
+  type        = string
   description = "ARN of the principal account"
 }
